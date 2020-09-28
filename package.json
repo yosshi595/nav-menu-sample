@@ -6,7 +6,7 @@
   "scripts": {
     "start": "watch 'npm run build' ./scss/",
     "build": "run-s build:scss build:autoprefixer",
-    "build:scss": "node-sass --include-path scss scss/style.scss css/style.css --output-style compressed",
+    "build:scss": "node-sass --include-path scss scss/style.scss css/style.css --output-style expanded",
     "build:autoprefixer": "postcss --use autoprefixer --no-map css/style.css -d css/"
   },
   "author": "",
